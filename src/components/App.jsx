@@ -23,6 +23,8 @@ export const App = () => {
 
   // componentDidUpdate(_, prevState) {
   useEffect(() => {
+    if (!query) return;
+
     //! `useEffect` has a missing dependency `fetchImages`. Either include it or remove the dependency array
     //* Оскільки ф-ція 'fetchImages' використовується тільки в 'useEffect()', то перемістимо його сюди:
     const fetchImages = async () => {
