@@ -1,6 +1,8 @@
 import ReactModal from 'react-modal';
 import { Image } from './Modal.styled';
 
+ReactModal.setAppElement('#root');
+
 export const Modal = ({ url, onModalClose, query }) => {
   return (
     <ReactModal
